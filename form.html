@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OLX Form - Full Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen bg-gray-100 text-black flex flex-col">
+    <!-- Top Bar -->
+    <div class="bg-white shadow px-6 py-4 flex items-center">
+      <button class="text-black text-2xl hover:text-blue-600">
+        <i class="ri-arrow-left-line"></i>
+      </button>
+    </div>
+
+    <h1 class="text-xl font-semibold text-center mt-4">Post Your Ad</h1>
+
+    <!-- Form Wrapper -->
+    <main class="flex-grow flex justify-center items-start p-6">
+      <div
+        class="w-full max-w-3xl bg-white border border-gray-300 rounded-md p-6 space-y-6"
+      >
+        <!-- Section Wrapper -->
+        <section class="border-b border-gray-300 p-4">
+          <h2 class="text-lg font-bold pb-2">SELECTED CATEGORY</h2>
+          <p class="text-sm text-gray-600 mt-2">
+            Cars / Cars
+            <a href="#" class="text-blue-600 underline ml-2 font-semibold"
+              >Change</a
+            >
+          </p>
+        </section>
+
+        <section class="border-b border-gray-300 p-4  space-y-5">
+          <h2 class="text-lg font-semibold pb-2">INCLUDE SOME DETAILS</h2>
+
+          <!-- Brand -->
+          <div>
+            <label class="block font-medium">Brand *</label>
+            <select class="w-2/3 border rounded p-2">
+              <option value="">Select brand</option>
+            </select>
+          </div>
+
+          <!-- Year -->
+          <div>
+            <label class="block font-medium">Year *</label>
+            <input
+              type="text"
+              class="w-2/3 border rounded p-2"
+              placeholder="Enter Year"
+            />
+          </div>
+
+          <!-- Fuel -->
+          <div>
+            <label class="block font-medium">Fuel *</label>
+            <div class="flex flex-wrap gap-2 mt-1">
+              <button class="border px-4 py-1 rounded">CNG & Hybrids</button>
+              <button class="border px-4 py-1 rounded">Diesel</button>
+              <button class="border px-4 py-1 rounded">Electric</button>
+              <button class="border px-4 py-1 rounded bg-blue-100">LPG</button>
+              <button class="border px-4 py-1 rounded">Petrol</button>
+            </div>
+          </div>
+
+          <!-- Transmission -->
+          <div>
+            <label class="block font-medium">Transmission *</label>
+            <div class="flex gap-2 mt-1">
+              <button class="border px-4 py-1 rounded">Automatic</button>
+              <button class="border px-4 py-1 rounded">Manual</button>
+            </div>
+          </div>
+
+          <!-- KM Driven -->
+          <div>
+            <label class="block font-medium">KM driven *</label>
+            <input
+              type="number"
+              class="w-2/3 border rounded p-2"
+              placeholder="Enter KM driven"
+            />
+          </div>
+
+          <!-- Owners -->
+          <div>
+            <label class="block font-medium">No. of Owners *</label>
+            <div class="flex flex-wrap gap-2 mt-1">
+              <button class="border px-4 py-1 rounded">1st</button>
+              <button class="border px-4 py-1 rounded">2nd</button>
+              <button class="border px-4 py-1 rounded">3rd</button>
+              <button class="border px-4 py-1 rounded">4th</button>
+              <button class="border px-4 py-1 rounded">4+</button>
+            </div>
+          </div>
+
+          <!-- Ad Title -->
+          <div>
+            <label class="block font-medium">Ad Title *</label>
+            <input
+              type="text"
+              class="w-2/3 border rounded p-2"
+              placeholder="Mention key features"
+            />
+          </div>
+
+          <!-- Description -->
+          <div>
+            <label class="block font-medium">Description *</label>
+            <textarea
+              class="w-2/3 border rounded p-2"
+              rows="4"
+              placeholder="Include condition, features and reason for selling"
+            ></textarea>
+          </div>
+        </section>
+
+        <!-- Price -->
+        <section class="border-b border-gray-300 p-4">
+          <h2 class="text-lg font-semibold pb-2">SET A PRICE</h2>
+          <input
+            type="text"
+            class="w-2/3 border rounded p-2 mt-2"
+            placeholder="₹"
+          />
+        </section>
+
+        <!-- Photo Upload -->
+        <section class="border-b border-gray-300 p-4">
+          <h2 class="text-lg font-semibold pb-2">UPLOAD UP TO 20 PHOTOS</h2>
+          <div class="grid grid-cols-5 gap-3 mt-4">
+            <!-- Photo slot (repeat up to 20) -->
+            <div
+              class="border border-gray-400 rounded-md flex items-center justify-center h-20 cursor-pointer hover:bg-gray-100"
+            >
+              <i class="ri-add-line text-2xl text-gray-500"></i>
+            </div>
+            <!-- Duplicate the div above for more slots -->
+            <!-- You can use a loop in your framework to generate 20 blocks -->
+            <!-- Here's how it would look repeated -->
+            <!-- For brevity, only repeating a few -->
+            <div
+              class="border border-gray-400 rounded-md flex items-center justify-center h-20 cursor-pointer"
+            >
+              <i class="ri-image-line text-2xl text-gray-300"></i>
+            </div>
+            <div
+              class="border border-gray-400 rounded-md flex items-center justify-center h-20 cursor-pointer"
+            >
+              <i class="ri-image-line text-2xl text-gray-300"></i>
+            </div>
+            <div
+              class="border border-gray-400 rounded-md flex items-center justify-center h-20 cursor-pointer"
+            >
+              <i class="ri-image-line text-2xl text-gray-300"></i>
+            </div>
+            <div
+              class="border border-gray-400 rounded-md flex items-center justify-center h-20 cursor-pointer"
+            >
+              <i class="ri-image-line text-2xl text-gray-300"></i>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500 mt-2">
+            You can upload up to 20 photos.
+          </p>
+        </section>
+
+        <!-- Location -->
+        <section class="border-b border-gray-300 p-4">
+          <h2 class="text-lg font-semibold pb-2">CONFIRM YOUR LOCATION</h2>
+          <input
+            type="text"
+            class="w-2/3 border rounded p-2 mt-2"
+            placeholder="Enter your state"
+          />
+        </section>
+
+        <!-- Review -->
+        <section class="border-b border-gray-300 p-4">
+          <h2 class="text-lg font-semibold pb-2">REVIEW YOUR DETAILS</h2>
+          <p class="mt-2">Name: <span class="font-medium">Jatin Kumar</span></p>
+        </section>
+
+        <!-- REVIEW DETAILS -->
+        <section class="border-b border-gray-300 p-4">
+          <h2 class="text-lg font-semibold pb-2">REVIEW YOUR DETAILS</h2>
+
+          <div class="flex items-center gap-4 mt-4">
+            <!-- Avatar -->
+            <div class="relative w-16 h-16">
+              <img
+                src="https://i.imgur.com/2DhmtJ4.jpg"
+                alt="Profile"
+                class="w-full h-full rounded-full bg-blue-100 object-cover"
+              />
+              <div
+                class="absolute bottom-0 right-0 bg-white rounded-full p-1 shadow"
+              >
+                <i class="ri-camera-line text-sm text-gray-600"></i>
+              </div>
+            </div>
+
+            <!-- Name input -->
+            <div class="flex-1">
+              <label class="block text-sm font-medium">Name</label>
+              <input
+                type="text"
+                class="w-2/3 border rounded p-2 text-sm"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- VERIFY ACCOUNT -->
+        <section class="border-b border-gray-300 p-4">
+          <h2 class="text-lg font-semibold pb-2">Let's verify your account</h2>
+          <p class="text-sm text-gray-600 mt-1">
+            We will send you a confirmation code by SMS on the next step.
+          </p>
+
+          <div class="mt-4">
+            <label class="block text-sm font-medium mb-1"
+              >Mobile Phone Number *</label
+            >
+            <input
+              type="text"
+              placeholder="+91"
+              class="w-2/3 border rounded p-2 text-sm"
+            />
+          </div>
+        </section>
+
+        <!-- POST NOW BUTTON (left-aligned & short) -->
+        <div class="p-4">
+          <button
+            class="bg-gray-300 text-gray-600 px-5 py-2 rounded text-sm cursor-not-allowed"
+            disabled
+          >
+            Post now
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
