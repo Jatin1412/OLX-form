@@ -194,64 +194,106 @@
           </p>
         </section>
 
-        <!-- Location -->
-        <section class="border-b border-gray-300 p-4">
-          <h2 class="text-lg font-semibold pb-2">CONFIRM YOUR LOCATION</h2>
-          <input
-            type="text"
-            class="w-2/3 border rounded p-2 mt-2"
-            placeholder="Enter your state"
-          />
+        <section class="border-b border-gray-300 px-4 pb-4 pt-0">
+          <h2 class="text-lg font-semibold">CONFIRM YOUR LOCATION</h2>
+        
+          <!-- Tabs -->
+          <div class="flex space-x-8 mt-4 text-sm font-semibold">
+            <div class="relative pb-1 text-blue-800">
+              LIST
+              <div class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-800"></div>
+            </div>
+            <div class="text-gray-700">CURRENT LOCATION</div>
+          </div>
+        
+          <!-- State Dropdown -->
+          <div class="mt-6">
+            <label for="state" class="block text-sm font-medium mb-1">State *</label>
+            <select
+              id="state"
+              class="w-2/3 border-2 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="">Select a state</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+            </select>
+          </div>
         </section>
+        
 
-        <!-- Review -->
-        <section class="border-b border-gray-300 p-4">
-          <h2 class="text-lg font-semibold pb-2">REVIEW YOUR DETAILS</h2>
-          <p class="mt-2">Name: <span class="font-medium">Jatin Kumar</span></p>
-        </section>
+        <!-- REVIEW DETAILS + VERIFY ACCOUNT -->
+        <section class="border-b border-gray-300 px-4 pb-4 pt-0">
+          <h2 class="text-lg font-semibold">REVIEW YOUR DETAILS</h2>
 
-        <!-- REVIEW DETAILS -->
-        <section class="border-b border-gray-300 p-4">
-          <h2 class="text-lg font-semibold pb-2">REVIEW YOUR DETAILS</h2>
-
+          <!-- Avatar + Name -->
           <div class="flex items-center gap-4 mt-4">
             <!-- Avatar -->
             <div class="relative w-16 h-16">
               <img
                 src="https://i.imgur.com/2DhmtJ4.jpg"
                 alt="Profile"
-                class="w-full h-full rounded-full bg-blue-100 object-cover"
+                class="w-full h-full rounded-full object-cover border border-gray-300"
               />
               <div
-                class="absolute bottom-0 right-0 bg-white rounded-full p-1 shadow"
+                class="absolute bottom-0 right-0 bg-white rounded-full p-1 shadow border"
               >
-                <i class="ri-camera-line text-sm text-gray-600"></i>
+                <i class="ri-camera-line text-xs text-gray-600"></i>
               </div>
             </div>
 
             <!-- Name input -->
             <div class="flex-1">
-              <label class="block text-sm font-medium">Name</label>
-              <input type="text" class="w-2/3 border rounded p-2 text-sm" />
+              <label class="block text-sm font-medium mb-1">Name</label>
+              <input
+                type="text"
+                class="w-2/3 border rounded px-3 py-2 text-sm"
+              />
             </div>
           </div>
-        </section>
 
-        <!-- VERIFY ACCOUNT -->
-        <section class="border-b border-gray-300 p-4">
-          <h2 class="text-lg font-semibold pb-2">Let's verify your account</h2>
-          <p class="text-sm text-gray-600 mt-1">
-            We will send you a confirmation code by SMS on the next step.
-          </p>
+          <!-- Mobile Verification -->
+          <div class="mt-6">
+            <h3 class="text-base font-semibold mb-1">
+              Let's verify your account
+            </h3>
+            <p class="text-sm text-gray-600 mb-4">
+              We will send you a confirmation code by SMS on the next step.
+            </p>
 
-          <div class="mt-4">
             <label class="block text-sm font-medium mb-1"
               >Mobile Phone Number *</label
             >
             <input
               type="text"
               placeholder="+91"
-              class="w-2/3 border rounded p-2 text-sm"
+              class="w-2/3 border rounded px-3 py-2 text-sm"
             />
           </div>
         </section>
